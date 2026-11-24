@@ -1,0 +1,101 @@
+{
+  "s01": {
+    "file": "outputs/narration/s01-51b415ac2075.wav",
+    "seconds": 5.13,
+    "words": 7,
+    "syllables": 24,
+    "syllables_per_second": 4.68,
+    "words_per_second": 1.36,
+    "fits_shot": true
+  },
+  "s02": {
+    "file": "outputs/narration/s02-a715e6acf430.wav",
+    "seconds": 6.68,
+    "words": 6,
+    "syllables": 22,
+    "syllables_per_second": 3.29,
+    "words_per_second": 0.9,
+    "fits_shot": false
+  },
+  "s03": {
+    "file": "outputs/narration/s03-efaaced544a1.wav",
+    "seconds": 7.04,
+    "words": 6,
+    "syllables": 28,
+    "syllables_per_second": 3.98,
+    "words_per_second": 0.85,
+    "fits_shot": false
+  },
+  "s04": {
+    "file": "outputs/narration/s04-bc1edb0bd752.wav",
+    "seconds": 7.76,
+    "words": 8,
+    "syllables": 40,
+    "syllables_per_second": 5.15,
+    "words_per_second": 1.03,
+    "fits_shot": false
+  },
+  "s05": {
+    "file": "outputs/narration/s05-3a362d4e897c.wav",
+    "seconds": 8.8,
+    "words": 6,
+    "syllables": 28,
+    "syllables_per_second": 3.18,
+    "words_per_second": 0.68,
+    "fits_shot": false
+  },
+  "s06": {
+    "file": "outputs/narration/s06-c07fe250f8ca.wav",
+    "seconds": 6.76,
+    "words": 6,
+    "syllables": 21,
+    "syllables_per_second": 3.11,
+    "words_per_second": 0.89,
+    "fits_shot": false
+  },
+  "s07": {
+    "file": "outputs/narration/s07-bfc97177db3b.wav",
+    "seconds": 6.08,
+    "words": 6,
+    "syllables": 18,
+    "syllables_per_second": 2.96,
+    "words_per_second": 0.99,
+    "fits_shot": true
+  },
+  "s08": {
+    "file": "outputs/narration/s08-f65bf6322906.wav",
+    "seconds": 6.24,
+    "words": 8,
+    "syllables": 25,
+    "syllables_per_second": 4.01,
+    "words_per_second": 1.28,
+    "fits_shot": true
+  },
+  "s09": {
+    "file": "outputs/narration/s09-c5d198d0a0d9.wav",
+    "seconds": 4.56,
+    "words": 5,
+    "syllables": 18,
+    "syllables_per_second": 3.95,
+    "words_per_second": 1.1,
+    "fits_shot": true
+  },
+  "s10": {
+    "file": "outputs/narration/s10-118d2f5f4732.wav",
+    "seconds": 5.04,
+    "words": 6,
+    "syllables": 20,
+    "syllables_per_second": 3.97,
+    "words_per_second": 1.19,
+    "fits_shot": true
+  },
+  "s11": {
+    "file": "outputs/narration/s11-2d926bc53768.wav",
+    "seconds": 6.2,
+    "words": 6,
+    "syllables": 23,
+    "syllables_per_second": 3.71,
+    "words_per_second": 0.97,
+    "fits_shot": true
+  }
+}

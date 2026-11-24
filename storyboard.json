@@ -1,0 +1,189 @@
+{
+  "title": "The Roots We Carry",
+  "logline": "A father in Addis Ababa answers his son abroad, who asked what Ethiopia is, by showing him what his own father once showed him.",
+  "language": "am",
+  "audience": "Young Ethiopians and the Ethiopian diaspora, watching on their phones (vertical first) and sharing with family.",
+  "intent": "Feel proud of their heritage and connected to home, and leave knowing that however far they travel, they carry their roots with them.",
+  "style": {
+    "style_block": "cinematic film still, warm golden-hour light, soft 35mm film grain, rich earthy palette of ochre, deep green and coffee brown, gentle realistic style, shallow depth of field, subject centred for vertical and horizontal crops",
+    "character": {
+      "name": "Abba (the father)",
+      "description": "a fictional Ethiopian man in his fifties, short grey-flecked beard, kind tired eyes, white cotton gabi over a simple collared shirt"
+    },
+    "seed": 1931
+  },
+  "voice": {
+    "name": "Charon",
+    "style_instruction": "Say in Amharic, slowly and warmly, like a loving father speaking to his son far away"
+  },
+  "music": {
+    "caption": "warm cinematic Ethiopian instrumental in the tizita mode, krar and masinko over soft strings and a low drum, nostalgic and hopeful, gentle texture with no strong lead melody, slow build",
+    "bpm": 72,
+    "key": "D minor",
+    "instrumental": true,
+    "cues": [
+      {
+        "at_shot": "s01",
+        "description": "soft masinko drone enters with the mountains"
+      },
+      {
+        "at_shot": "s06",
+        "description": "krar joins as the coffee is roasted; warmer"
+      },
+      {
+        "at_shot": "s08",
+        "description": "low drum and strings lift for the modern city"
+      },
+      {
+        "at_shot": "s11",
+        "description": "theme returns softly, resolves, fades under the end card"
+      }
+    ]
+  },
+  "shots": [
+    {
+      "id": "s01",
+      "duration": 7,
+      "reason": "Establishes the homeland and the son's question that the whole film answers.",
+      "shot_size": "extreme-wide",
+      "shows_character": false,
+      "image_prompt": "Ethiopian highlands at dawn, layered green mountains with mist in the valleys, a narrow footpath and a few round thatched tukuls",
+      "motion": "i2v",
+      "motion_prompt": "slow aerial push forward, mist drifting gently, camera steady",
+      "narration": "ልጄ ሆይ፣ ኢትዮጵያ ምንድን ናት ብለህ ጠይቀኸኛል።",
+      "subtitle_en": "My son, you asked me what Ethiopia is.",
+      "seed": 101,
+      "take": 2
+    },
+    {
+      "id": "s02",
+      "duration": 6,
+      "reason": "Introduces the father, the voice of the film, answering from home.",
+      "shot_size": "medium",
+      "shows_character": true,
+      "image_prompt": "Abba sitting by a wooden window in a modest Addis Ababa home, morning light on his face, holding a phone to record a message, a small coffee cup beside him",
+      "motion": "i2v",
+      "motion_prompt": "he lifts his eyes from the phone and smiles softly, static camera",
+      "narration": "ዛሬ አባቴ ያሳየኝን ሁሉ ላሳይህ እፈልጋለሁ።",
+      "subtitle_en": "Today I want to show you everything my father showed me.",
+      "seed": 102
+    },
+    {
+      "id": "s03",
+      "duration": 7,
+      "reason": "The memory begins: a grandfather passing knowledge to a boy, the chain of generations.",
+      "shot_size": "wide",
+      "shows_character": false,
+      "image_prompt": "seen from behind, an elderly Ethiopian grandfather in a white gabi with a walking stick and a small boy walking together on a mountain path at sunrise, warm nostalgic tone",
+      "motion": "i2v",
+      "motion_prompt": "they walk slowly away from camera, gentle wind in the grass, camera follows gently",
+      "narration": "እነዚህ ተራሮች የአያቶቻችንን ታሪክ በዝምታ ይጠብቃሉ።",
+      "subtitle_en": "These mountains quietly keep the story of our ancestors.",
+      "seed": 103
+    },
+    {
+      "id": "s04",
+      "duration": 7,
+      "reason": "One landmark stands for the history: a church carved from a single rock.",
+      "shot_size": "wide",
+      "shows_character": false,
+      "image_prompt": "a cross-shaped church carved down into red volcanic rock, seen from above at golden hour, carved steps and a trench around it, a few pilgrims in white",
+      "motion": "kenburns",
+      "narration": "ከአንድ ዓለት የተፈለፈሉ አብያተ ክርስቲያናት፤ በእምነትና በትዕግሥት የተሠሩ።",
+      "subtitle_en": "Churches carved from a single rock, built with faith and patience.",
+      "seed": 104
+    },
+    {
+      "id": "s05",
+      "duration": 7,
+      "reason": "Family values: the elders' wisdom of love and forgiveness under the warka tree.",
+      "shot_size": "wide",
+      "shows_character": false,
+      "image_prompt": "village elders in white gabis seated in a circle under a huge warka (sycamore fig) tree, dappled afternoon light, calm conversation",
+      "motion": "i2v",
+      "motion_prompt": "leaves sway softly, one elder gestures gently, static camera",
+      "narration": "በዋርካ ሥር ሽማግሌዎች ፍቅርንና ይቅርታን አስተማሩን።",
+      "subtitle_en": "Under the warka tree, the elders taught us love and forgiveness.",
+      "seed": 105
+    },
+    {
+      "id": "s06",
+      "duration": 6,
+      "reason": "The coffee ceremony begins; the smell of roasting coffee is the memory of home.",
+      "shot_size": "close-up",
+      "shows_character": false,
+      "image_prompt": "close-up of green coffee beans roasting dark brown in a flat iron pan over charcoal, white smoke rising, fresh grass and frankincense nearby",
+      "motion": "i2v",
+      "motion_prompt": "smoke curls upward, beans shift slightly, slow push-in",
+      "narration": "ቡና ሲቆላ፣ መዓዛው ቤቱን በሙሉ ይሰበስባል።",
+      "subtitle_en": "When the coffee is roasted, its aroma gathers the whole house.",
+      "seed": 106
+    },
+    {
+      "id": "s07",
+      "duration": 7,
+      "reason": "Family together around one table: the heart of what he is passing on.",
+      "shot_size": "medium",
+      "shows_character": false,
+      "image_prompt": "a black clay jebena pouring coffee into small white sini cups on a tray, family members' hands reaching in, warm lamp light, grass on the floor",
+      "motion": "i2v",
+      "motion_prompt": "coffee pours in a slow steady stream, steam rises, static camera",
+      "narration": "አንድ ሲኒ፣ አንድ ማዕድ፣ አንድ ቤተሰብ።",
+      "subtitle_en": "One cup, one table, one family.",
+      "seed": 107
+    },
+    {
+      "id": "s08",
+      "duration": 7,
+      "reason": "Turns from the past to the present: Ethiopia moving into the modern world.",
+      "shot_size": "extreme-wide",
+      "shows_character": false,
+      "image_prompt": "Addis Ababa skyline at dusk, modern towers and the light rail with lights coming on, warm sky, the hills beyond",
+      "motion": "i2v",
+      "motion_prompt": "slow pan right across the skyline, city lights flicker on",
+      "narration": "ዛሬ ደግሞ የአንተ ትውልድ አዲስ ታሪክ እየጻፈ ነው።",
+      "subtitle_en": "And today, your generation is writing a new story.",
+      "seed": 108
+    },
+    {
+      "id": "s09",
+      "duration": 6,
+      "reason": "The dreams of the young generation, his hope for the future.",
+      "shot_size": "medium",
+      "shows_character": false,
+      "image_prompt": "young Ethiopians working together in a bright Addis Ababa studio, one sketching a design, one at a laptop, traditional woven patterns on the wall",
+      "motion": "i2v",
+      "motion_prompt": "they look up and share a smile, gentle push-in",
+      "narration": "የእናንተ ሕልምና ትጋት ተስፋዬ ነው።",
+      "subtitle_en": "Your dreams and your hard work are my hope.",
+      "seed": 109
+    },
+    {
+      "id": "s10",
+      "duration": 7,
+      "reason": "The son abroad receives the message: the diaspora viewer sees himself.",
+      "shot_size": "medium",
+      "shows_character": false,
+      "image_prompt": "a young Ethiopian man seen from behind and side, standing at an apartment window in a snowy foreign city at night, holding a small white sini cup, a phone glowing in his hand",
+      "motion": "i2v",
+      "motion_prompt": "snow falls outside, steam rises from the cup, very slow push-in",
+      "narration": "የትም ብትሄድ፣ ይህን ሁሉ ይዘህ ትሄዳለህ።",
+      "subtitle_en": "Wherever you go, you carry all of this with you.",
+      "seed": 110
+    },
+    {
+      "id": "s11",
+      "duration": 8,
+      "reason": "The father's final words land the film's intent: you carry your roots.",
+      "shot_size": "close-up",
+      "shows_character": true,
+      "image_prompt": "close-up of Abba smiling with gentle pride, a thin line of coffee smoke drifting in front of him, warm window light",
+      "motion": "i2v",
+      "motion_prompt": "he gives a small nod and smiles, smoke drifts across, static camera",
+      "narration": "እኛን ይዘህ ትሄዳለህ። ሥርህን ይዘህ ትሄዳለህ።",
+      "subtitle_en": "You carry us. You carry your roots.",
+      "seed": 111
+    }
+  ],
+  "pronunciation": {}
+}

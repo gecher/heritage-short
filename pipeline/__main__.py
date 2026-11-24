@@ -2,6 +2,9 @@
 
   validate   check storyboard.json against the schema and the film rules
   smoke      call every provider once and log it
+  narration  Gemini TTS, one cached audio file per shot
+  radio      narration over placeholder music on black, with subtitles
+  say "..."  speak one test phrase into outputs/narration/_tests (pronunciation trials)
   film       every stage in order (stages are added as we build them)
 """
 from __future__ import annotations
@@ -22,7 +25,24 @@ def smoke() -> None:
     s.main()
 
 
-COMMANDS = {"validate": validate, "smoke": smoke}
+def narration() -> None:
+    from pipeline import narration as n
+    n.run()
+
+
+def radio() -> None:
+    from pipeline import radio as r
+    r.run()
+
+
+def say() -> None:
+    from pipeline import narration as n
+    if len(sys.argv) < 3:
+        raise SystemExit('usage: python -m pipeline say "text to speak"')
+    n.say(" ".join(sys.argv[2:]))
+
+
+COMMANDS = {"say": say, "validate": validate, "smoke": smoke, "narration": narration, "radio": radio}
 
 if __name__ == "__main__":
     command = sys.argv[1] if len(sys.argv) > 1 else "help"

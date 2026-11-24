@@ -33,6 +33,16 @@ def env(name: str, default: str | None = None) -> str | None:
     return value if value else default
 
 
+def ffmpeg() -> str:
+    """The ffmpeg executable: FFMPEG_BIN from .env, else the one on PATH."""
+    import shutil
+    found = env("FFMPEG_BIN") or shutil.which("ffmpeg")
+    if not found:
+        raise SystemExit("ffmpeg not found: install it (winget install ffmpeg), reopen the terminal, "
+                         "or set FFMPEG_BIN in .env to the full path of ffmpeg.exe")
+    return found
+
+
 # --- the contract ------------------------------------------------------------------------------
 
 def _short(error: Any) -> str:
@@ -62,7 +72,9 @@ def validate(board: dict[str, Any]) -> list[str]:
     for s in shots:
         words = len(s["narration"].split())
         lo, hi = WORDS_PER_SECOND
-        if words and not lo * s["duration"] * 0.5 <= words <= hi * s["duration"]:
+        # Only an upper bound: Amharic words are long, so a short line is fine (a held beat).
+        # The real pace is measured from the TTS output in the narration stage (see EXPERIMENTS.md).
+        if words > hi * s["duration"]:
             errors.append(f"{s['id']}: {words} words will not fit {s['duration']}s of narration")
         if s["narration"] and not s["subtitle_en"]:
             errors.append(f"{s['id']}: narration needs an English subtitle")
@@ -140,9 +152,11 @@ def call_model(stage: str, shot: str, provider: str, model: str, params: dict[st
             log_call(stage=stage, shot=shot, provider=provider, model=model, params=params,
                      seed=params.get("seed"), latency_s=latency, attempt=attempt, status="error",
                      error=f"{type(exc).__name__}: {str(exc)[:300]}")
-            if attempt == attempts:
+            daily = "PerDay" in str(exc) or "per day" in str(exc)
+            if attempt == attempts or daily:  # a daily quota will not recover by waiting
                 raise
-            time.sleep(2 ** attempt)
+            limited = any(t in str(exc) for t in ("429", "RESOURCE_EXHAUSTED"))
+            time.sleep(20 * attempt if limited else 2 ** attempt)  # quota limits need a longer wait
             continue
         latency = round(time.perf_counter() - start, 3)
         log_call(stage=stage, shot=shot, provider=provider, model=model, params=params,
