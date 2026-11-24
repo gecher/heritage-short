@@ -1,0 +1,10 @@
+# secrets never leave this machine
+.env
+kaggle.json
+# python
+__pycache__/
+.venv/
+*.pyc
+# heavy renders (kept locally; final films are linked in assignment 2)
+outputs/film/*.mp4
+outputs/shots/*.mp4
