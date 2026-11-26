@@ -4,14 +4,21 @@ A 90-second Amharic film about Ethiopian heritage, rebuilt from one file (`story
 
 A father in Addis Ababa answers his son abroad, who asked what Ethiopia is, by showing him what his own father once showed him: the highlands, a church carved from rock, the elders under the warka tree, the coffee ceremony, and the new generation.
 
-- **Film:** <!-- link: YouTube (unlisted) or Drive -->
-- **Website:** <!-- link: Vercel --> (watch with a live Amharic/English transcript, see the AI judge versus the human review, play the score instrument by instrument)
+| | Link |
+|---|---|
+| 🎬 Film, vertical 9:16 (phones) | FILM_916 |
+| 🎬 Film, horizontal 16:9 (laptops, YouTube) | FILM_169 |
+| 🌐 Website | https://the-roots-we-carry.vercel.app |
+| 🎥 Walkthrough (≤ 5 min) | WALKTHROUGH |
+| 📣 Public post | POST |
 
 ## What is special about it
 - **Amharic voice with a Ge'ez quality gate.** Each line is checked against its syllable count (each fidel ≈ one syllable). Takes that are too long, for example when the model read the English instruction aloud, are rejected and re-recorded automatically.
 - **An AI judge, and an Ethiopian eye over it.** Every shot has several image candidates scored for prompt match, character consistency, Ethiopian appearance and cultural accuracy. Where the judge accepted something an Ethiopian viewer would reject, the human review overruled it (`review.json`).
 - **A tizita score composed in code.** No music model had free quota, so `pipeline/score.py` writes an original score in the tizita scale, timed to the film's cues.
 - **Bilingual on screen.** Amharic in Ge'ez script above English subtitles, chapter marks in Ge'ez numerals (፩ ፪ ፫ ፬ ፭), the title written fidel by fidel, a tibeb border.
+- **Two films from one command:** 9:16 for phones and 16:9 for laptops and YouTube, both built from the same cached shots.
+- **A website** (`web/`, static, no keys): the film in either shape with Ge'ez chapter buttons, the story, how it was made, and the score played instrument by instrument. Built by `python -m pipeline site` and hosted on Vercel.
 - **Honest engineering.** Content-hash caching, fallback chains, a call log, 18 documented failures, 11 experiments.
 
 ## Quick start
@@ -39,6 +46,9 @@ Needs Python 3.11+, FFmpeg (set `FFMPEG_BIN` in `.env` if it is not on PATH), a 
 | `film` | everything in order, then the final MP4s: 9:16 and 16:9 (`film 16x9` for one) |
 | `site` | the website in `web/` |
 | `report` | COSTS.md |
+
+## Website
+`web/` is a plain static page: `index.html` plus `data.js` and `assets/` written by `python -m pipeline site`. Open `web/index.html` directly, or serve it (`npx serve web`; Python's `http.server` cannot seek inside videos). Vercel serves it with the project's Root Directory set to `web`.
 
 ## Documents
 - [DESIGN.md](DESIGN.md): audience, intent, story, user tests
