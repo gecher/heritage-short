@@ -1,0 +1,17 @@
+{
+  "prompt_match": 7,
+  "same_person": null,
+  "cultural_issues": [
+    "The jebena has a handle on the side, which is not traditional for an Ethiopian jebena",
+    "The cups have handles, whereas traditional Ethiopian coffee cups (cini) are handleless",
+    "The pouring mechanism is physically impossible as the liquid is pouring from a spoon into the air above the pot rather than from the spout",
+    "The tray is placed directly on grass, which is not a standard setting for a coffee ceremony"
+  ],
+  "artifacts": [
+    "The hand pouring the liquid has distorted fingers",
+    "The liquid stream is disconnected from the spoon and the pot",
+    "The anatomy of the hands reaching for the cups is unnatural"
+  ],
+  "note": "The image captures the warm atmosphere of a coffee ceremony but contains significant anatomical errors and inaccuracies regarding traditional Ethiopian coffee equipment.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

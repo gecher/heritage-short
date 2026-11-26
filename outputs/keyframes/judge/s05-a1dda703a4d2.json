@@ -1,0 +1,13 @@
+{
+  "prompt_match": 8,
+  "same_person": null,
+  "people_look_ethiopian": 7,
+  "cultural_issues": [
+    "some facial features lean slightly ambiguous or AI-smooth"
+  ],
+  "artifacts": [
+    "slightly distorted feet and hands on close inspection"
+  ],
+  "note": "A decent representation of elders under a warka tree, but facial features and skin textures reveal AI generation.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,14 @@
+{
+  "prompt_match": 6,
+  "same_person": null,
+  "cultural_issues": [
+    "coffee beans are green/raw, not roasted dark brown as requested",
+    "the beans look more like olives or large legumes than coffee beans",
+    "frankincense is not clearly visible or identifiable"
+  ],
+  "artifacts": [
+    "the coffee beans have an unnatural, uniform, and slightly distorted shape"
+  ],
+  "note": "The image fails to show the coffee beans being roasted to a dark brown color as requested, and the beans themselves appear anatomically incorrect.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

@@ -1,0 +1,9 @@
+{
+  "prompt_match": 8,
+  "same_person": 9,
+  "people_look_ethiopian": 8,
+  "cultural_issues": [],
+  "artifacts": [],
+  "note": "The keyframe captures Abba by a wooden window with morning light, holding a phone and sitting next to a cup, portraying a genuine Ethiopian domestic scene.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

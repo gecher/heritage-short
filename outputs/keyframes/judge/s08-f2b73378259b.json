@@ -1,0 +1,11 @@
+{
+  "prompt_match": 10,
+  "same_person": null,
+  "people_look_ethiopian": null,
+  "cultural_issues": [],
+  "artifacts": [
+    "garbled text on light rail (PELMABA, TEUTATA)"
+  ],
+  "note": "A recognizable view of Addis Ababa at dusk with the light rail and the iconic Kazanchis / African Union surrounding skyline clearly depicted.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

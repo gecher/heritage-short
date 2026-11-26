@@ -1,0 +1,15 @@
+{
+  "prompt_match": 6,
+  "same_person": null,
+  "cultural_issues": [
+    "The wall hangings feature patterns that are more reminiscent of Native American or generic tribal designs rather than authentic Ethiopian Tilet or traditional weaving patterns.",
+    "The overall interior aesthetic feels more like a generic 'boho' studio than a typical Addis Ababa workspace."
+  ],
+  "artifacts": [
+    "The text on the paper is garbled and illegible.",
+    "The person's hand holding the pen is anatomically distorted.",
+    "The laptop keyboard and screen interface are poorly rendered."
+  ],
+  "note": "The image captures the requested activity but lacks authentic Ethiopian cultural markers in the decor and contains significant AI-generated anatomical and object artifacts.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

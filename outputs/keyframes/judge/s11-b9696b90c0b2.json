@@ -1,0 +1,8 @@
+{
+  "prompt_match": 9,
+  "same_person": 7,
+  "cultural_issues": [],
+  "artifacts": [],
+  "note": "The keyframe captures the requested mood and elements well, though the facial features differ slightly from the reference portrait.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

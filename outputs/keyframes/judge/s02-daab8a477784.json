@@ -1,0 +1,9 @@
+{
+  "prompt_match": 10,
+  "same_person": 10,
+  "people_look_ethiopian": 10,
+  "cultural_issues": [],
+  "artifacts": [],
+  "note": "The keyframe accurately portrays the main character with authentic Habesha features and setting the scene as requested.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

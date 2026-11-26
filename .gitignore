@@ -8,3 +8,12 @@ __pycache__/
 # heavy renders (kept locally; final films are linked in assignment 2)
 outputs/film/*.mp4
 outputs/shots/*.mp4
+outputs/**/_*.jpg
+outputs/**/_*.png
+outputs/film/*.txt
+outputs/film/*.wav
+outputs/**/*.partial*
+outputs/music/score.wav
+outputs/music/_*
+outputs/music/stems-*/
+web/*.bak

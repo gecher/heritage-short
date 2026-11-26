@@ -1,0 +1,9 @@
+{
+  "prompt_match": 10,
+  "same_person": null,
+  "people_look_ethiopian": 9,
+  "cultural_issues": [],
+  "artifacts": [],
+  "note": "A beautiful and evocative shot of an elderly man and child walking into the sunrise that fully captures Ethiopian cultural warmth.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

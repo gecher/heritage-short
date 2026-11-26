@@ -1,0 +1,15 @@
+{
+  "prompt_match": 8,
+  "same_person": null,
+  "people_look_ethiopian": 7,
+  "cultural_issues": [
+    "Coffee pot has a side handle like a Western teapot instead of traditional design",
+    "Pouring from the lid/stopper rather than the spout"
+  ],
+  "artifacts": [
+    "Distorted hands holding cups",
+    "Anomalous thin stream of coffee seemingly pulled like wire from the lid stopper"
+  ],
+  "note": "While the warm lighting and general setting evoke an Ethiopian coffee ceremony, the pot's side handle and strange pouring mechanics look unnatural.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

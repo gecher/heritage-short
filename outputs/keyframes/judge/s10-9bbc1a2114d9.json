@@ -1,0 +1,14 @@
+{
+  "prompt_match": 9,
+  "same_person": null,
+  "cultural_issues": [
+    "The coffee cup is a modern disposable style, not a traditional Ethiopian jebena or sini",
+    "The setting is a generic foreign city, lacking specific Ethiopian cultural markers"
+  ],
+  "artifacts": [
+    "The hand holding the cup is anatomically distorted",
+    "The glowing object in the hand is ambiguous and poorly rendered"
+  ],
+  "note": "The image captures the mood well, but the hand anatomy and the lack of specific cultural elements are notable.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

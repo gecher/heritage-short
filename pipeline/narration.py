@@ -123,8 +123,10 @@ def run(board: dict[str, Any] | None = None) -> dict[str, Any]:
                          reason=f"{seconds:.1f}s for {words} words", output=bad.name)
                 print(f"  {sid}: REJECTED {seconds:.1f}s for {words} words (kept as {bad.name} to listen to)")
                 break
-            with wave.open(str(target), "wb") as w:
+            tmp = target.with_name(target.stem + ".partial.wav")
+            with wave.open(str(tmp), "wb") as w:
                 w.setnchannels(1); w.setsampwidth(2); w.setframerate(RATE); w.writeframes(pcm)
+            tmp.replace(target)                            # complete files only (FAILURES F18)
             path = target
         if path is None:
             manifest[sid] = None

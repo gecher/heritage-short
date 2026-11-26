@@ -1,0 +1,11 @@
+{
+  "prompt_match": 8,
+  "same_person": null,
+  "cultural_issues": [],
+  "artifacts": [
+    "distorted hands on some figures",
+    "slight blending of clothing details"
+  ],
+  "note": "The village elders are well-depicted under a large warka tree in traditional white attire, creating an authentic atmosphere.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

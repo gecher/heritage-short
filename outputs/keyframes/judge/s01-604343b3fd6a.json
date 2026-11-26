@@ -1,0 +1,8 @@
+{
+  "prompt_match": 10,
+  "same_person": null,
+  "cultural_issues": [],
+  "artifacts": [],
+  "note": "A breathtaking sunrise view over the Ethiopian highlands featuring layered mountains and traditional tukuls.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

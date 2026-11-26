@@ -1,0 +1,9 @@
+{
+  "prompt_match": 8,
+  "same_person": 9,
+  "people_look_ethiopian": 8,
+  "cultural_issues": [],
+  "artifacts": [],
+  "note": "The scene depicts Abba with a phone and window setting well, though the handleless cup is partially obscured.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,16 @@
+{
+  "prompt_match": 8,
+  "same_person": null,
+  "cultural_issues": [
+    "The clothing resembles generic Middle Eastern thobes rather than the traditional Ethiopian gabi or netela",
+    "The facial features and overall aesthetic lean more towards Middle Eastern or North African than Ethiopian",
+    "The tree, while large, does not specifically resemble a Warka (sycamore fig) tree"
+  ],
+  "artifacts": [
+    "Distorted hands and fingers on several individuals",
+    "Anatomical inconsistencies in the legs and feet of the seated men",
+    "Unnatural blending of clothing folds and fabric textures"
+  ],
+  "note": "The scene captures the requested atmosphere well, but the cultural attire and physical features are not authentically Ethiopian.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

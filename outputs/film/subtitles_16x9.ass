@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Am,Ebrima,56,&H0070D8FF,&H000000FF,&H00101010,&H80000000,1,0,0,0,100,100,0,0,1,3,1,2,60,60,170,1
+Style: En,Ebrima,44,&H00FFFFFF,&H000000FF,&H00101010,&H80000000,0,0,0,0,100,100,0,0,1,2.6,1,2,70,70,190,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:05.53,Am,,0,0,0,,{\fad(200,250)}ልጄ ሆይ፣ ኢትዮጵያ ምንድን ናት ብለህ ጠይቀኸኛል።\N{\rEn}My son, you asked me what Ethiopia is.
+Dialogue: 0,0:00:07.40,0:00:14.08,Am,,0,0,0,,{\fad(200,250)}ዛሬ አባቴ ያሳየኝን ሁሉ ላሳይህ እፈልጋለሁ።\N{\rEn}Today I want to show you everything my father showed me.
+Dialogue: 0,0:00:15.08,0:00:22.12,Am,,0,0,0,,{\fad(200,250)}እነዚህ ተራሮች የአያቶቻችንን ታሪክ በዝምታ ይጠብቃሉ።\N{\rEn}These mountains quietly keep the story of our ancestors.
+Dialogue: 0,0:00:23.12,0:00:30.88,Am,,0,0,0,,{\fad(200,250)}ከአንድ ዓለት የተፈለፈሉ አብያተ ክርስቲያናት፤ በእምነትና በትዕግሥት የተሠሩ።\N{\rEn}Churches carved from a single rock, built with faith and patience.
+Dialogue: 0,0:00:31.88,0:00:40.68,Am,,0,0,0,,{\fad(200,250)}በዋርካ ሥር ሽማግሌዎች ፍቅርንና ይቅርታን አስተማሩን።\N{\rEn}Under the warka tree, the elders taught us love and forgiveness.
+Dialogue: 0,0:00:41.68,0:00:48.44,Am,,0,0,0,,{\fad(200,250)}ቡና ሲቆላ፣ መዓዛው ቤቱን በሙሉ ይሰበስባል።\N{\rEn}When the coffee is roasted, its aroma gathers the whole house.
+Dialogue: 0,0:00:49.44,0:00:55.52,Am,,0,0,0,,{\fad(200,250)}አንድ ሲኒ፣ አንድ ማዕድ፣ አንድ ቤተሰብ።\N{\rEn}One cup, one table, one family.
+Dialogue: 0,0:00:56.52,0:01:02.76,Am,,0,0,0,,{\fad(200,250)}ዛሬ ደግሞ የአንተ ትውልድ አዲስ ታሪክ እየጻፈ ነው።\N{\rEn}And today, your generation is writing a new story.
+Dialogue: 0,0:01:03.76,0:01:08.32,Am,,0,0,0,,{\fad(200,250)}የእናንተ ሕልምና ትጋት ተስፋዬ ነው።\N{\rEn}Your dreams and your hard work are my hope.
+Dialogue: 0,0:01:09.76,0:01:14.80,Am,,0,0,0,,{\fad(200,250)}የትም ብትሄድ፣ ይህን ሁሉ ይዘህ ትሄዳለህ።\N{\rEn}Wherever you go, you carry all of this with you.
+Dialogue: 0,0:01:16.76,0:01:22.96,Am,,0,0,0,,{\fad(200,250)}እኛን ይዘህ ትሄዳለህ። ሥርህን ይዘህ ትሄዳለህ።\N{\rEn}You carry us. You carry your roots.

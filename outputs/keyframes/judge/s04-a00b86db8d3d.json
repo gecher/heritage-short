@@ -1,0 +1,8 @@
+{
+  "prompt_match": 10,
+  "same_person": null,
+  "cultural_issues": [],
+  "artifacts": [],
+  "note": "A striking overhead view of a rock-hewn Ethiopian church at golden hour.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,9 @@
+{
+  "prompt_match": 10,
+  "same_person": null,
+  "people_look_ethiopian": null,
+  "cultural_issues": [],
+  "artifacts": [],
+  "note": "A breathtaking capture of the Ethiopian highlands, perfectly showcasing the misty valleys, lush green mountains, and traditional tukuls.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

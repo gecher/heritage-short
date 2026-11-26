@@ -1,0 +1,11 @@
+{
+  "prompt_match": 8,
+  "same_person": 5,
+  "cultural_issues": [],
+  "artifacts": [
+    "distorted fingers holding the phone",
+    "unnatural hand shape holding the cup"
+  ],
+  "note": "The scene effectively captures Abba by a window with a traditional vibe, though the character's facial features differ slightly from the reference.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

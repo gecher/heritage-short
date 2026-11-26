@@ -1,0 +1,11 @@
+{
+  "prompt_match": 8,
+  "same_person": null,
+  "cultural_issues": [
+    "the architecture resembles Petra rather than traditional Ethiopian rock-hewn churches such as those in Lalibela",
+    "the church style is European-influenced rather than Ethiopian Orthodox"
+  ],
+  "artifacts": [],
+  "note": "The aerial view captures the carved rock setting, but the architectural style is more Middle Eastern than traditional Ethiopian.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

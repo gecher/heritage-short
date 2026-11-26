@@ -1,0 +1,479 @@
+{
+  "s01": {
+    "file": "outputs/keyframes/s01-f3e71ba33bdb.jpg",
+    "prompt": "Ethiopian highlands at dawn, layered green mountains with mist in the valleys, a narrow footpath and a few round thatched tukuls, cinematic film still, warm golden-hour light, soft 35mm film grain, rich earthy palette of ochre, deep green and coffee brown, gentle realistic style, shallow depth of field, subject centred for vertical and horizontal crops",
+    "candidates": [
+      {
+        "file": "outputs/keyframes/s01-f3e71ba33bdb.jpg",
+        "score": 10.0,
+        "verdict": {
+          "prompt_match": 10,
+          "same_person": null,
+          "people_look_ethiopian": null,
+          "cultural_issues": [],
+          "artifacts": [],
+          "note": "A breathtaking capture of the Ethiopian highlands, perfectly showcasing the misty valleys, lush green mountains, and traditional tukuls.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s01-dd253c8a33e7.jpg",
+        "score": 8.0,
+        "verdict": {
+          "prompt_match": 8,
+          "same_person": null,
+          "people_look_ethiopian": null,
+          "cultural_issues": [],
+          "artifacts": [],
+          "note": "The shot captures the majestic Ethiopian highlands at dawn with layered green mountains and traditional thatched tukuls.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      }
+    ],
+    "judged": true
+  },
+  "s02": {
+    "file": "outputs/keyframes/s02-80b54cd2926e.jpg",
+    "prompt": "Abba, a Habesha Ethiopian father, sitting by a wooden window in a modest Addis Ababa home, morning light on his face, holding a phone to record a message, a small white handleless cup beside him, the man is a fictional Habesha Ethiopian man from Addis Ababa in his fifties, deep brown skin, East African features, short tightly curled grey-flecked hair and a short grey-flecked beard, kind tired eyes, a white handwoven cotton gabi shawl draped over a simple collared shirt, cinematic film still, warm golden-hour light, soft 35mm film grain, rich earthy palette of ochre, deep green and coffee brown, gentle realistic style, shallow depth of field, subject centred for vertical and horizontal crops",
+    "candidates": [
+      {
+        "file": "outputs/keyframes/s02-1ded635a34f4.jpg",
+        "score": 15.0,
+        "verdict": {
+          "prompt_match": 8,
+          "same_person": 9,
+          "people_look_ethiopian": 8,
+          "cultural_issues": [],
+          "artifacts": [],
+          "note": "The scene depicts Abba with a phone and window setting well, though the handleless cup is partially obscured.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s02-80b54cd2926e.jpg",
+        "score": 20.0,
+        "verdict": {
+          "prompt_match": 10,
+          "same_person": 10,
+          "people_look_ethiopian": 10,
+          "cultural_issues": [],
+          "artifacts": [],
+          "note": "The keyframe accurately portrays the main character with authentic Habesha features and setting the scene as requested.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s02-bfc6c42865e7.jpg",
+        "score": 15.0,
+        "verdict": {
+          "prompt_match": 8,
+          "same_person": 9,
+          "people_look_ethiopian": 8,
+          "cultural_issues": [],
+          "artifacts": [],
+          "note": "The keyframe captures Abba by a wooden window with morning light, holding a phone and sitting next to a cup, portraying a genuine Ethiopian domestic scene.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s02-246a4990da44.jpg",
+        "score": 20.0,
+        "verdict": {
+          "prompt_match": 10,
+          "same_person": 10,
+          "people_look_ethiopian": 10,
+          "cultural_issues": [],
+          "artifacts": [],
+          "note": "The keyframe accurately portrays the character from the reference portrait in an authentic Ethiopian setting.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      }
+    ],
+    "judged": true
+  },
+  "s03": {
+    "file": "outputs/keyframes/s03-8bd9de6eb822.jpg",
+    "prompt": "seen from behind, an elderly Ethiopian grandfather in a white gabi with a walking stick and a small boy walking together on a mountain path at sunrise, warm nostalgic tone, cinematic film still, warm golden-hour light, soft 35mm film grain, rich earthy palette of ochre, deep green and coffee brown, gentle realistic style, shallow depth of field, subject centred for vertical and horizontal crops",
+    "candidates": [
+      {
+        "file": "outputs/keyframes/s03-4c2b3b0578f8.jpg",
+        "score": 2.0,
+        "verdict": {
+          "prompt_match": 8,
+          "same_person": null,
+          "people_look_ethiopian": 6,
+          "cultural_issues": [
+            "clothing resembles a south asian kurta/thobe rather than a traditional habesha gabi"
+          ],
+          "artifacts": [],
+          "note": "The scenic mountain path and sunrise evoke a warm tone, but the clothing worn by the man looks more South Asian than Ethiopian.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s03-8bd9de6eb822.jpg",
+        "score": 9.0,
+        "verdict": {
+          "prompt_match": 10,
+          "same_person": null,
+          "people_look_ethiopian": 9,
+          "cultural_issues": [],
+          "artifacts": [],
+          "note": "A beautiful and evocative shot of an elderly man and child walking into the sunrise that fully captures Ethiopian cultural warmth.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      }
+    ],
+    "judged": true
+  },
+  "s04": {
+    "file": "outputs/keyframes/s04-f6cb8f60060f.jpg",
+    "prompt": "aerial view of the Church of Saint George (Bete Giyorgis) in Lalibela, Ethiopia: a cross-shaped church carved down into a pit of red volcanic rock, its flat roof carved with nested crosses, a deep trench around it, a few pilgrims wrapped in white shawls, golden hour, cinematic film still, warm golden-hour light, soft 35mm film grain, rich earthy palette of ochre, deep green and coffee brown, gentle realistic style, shallow depth of field, subject centred for vertical and horizontal crops",
+    "candidates": [
+      {
+        "file": "outputs/keyframes/s04-f6cb8f60060f.jpg",
+        "score": -6.0,
+        "verdict": {
+          "prompt_match": 8,
+          "same_person": null,
+          "people_look_ethiopian": 3,
+          "cultural_issues": [
+            "crosses on the roof are stylistically inaccurate to Bete Giyorgis",
+            "architecture of the trench and surrounding complex looks generated and incorrect",
+            "people dressed in white shawls lack authentic Habesha facial features"
+          ],
+          "artifacts": [
+            "blurred figures with lack of distinct facial features due to high angle AI generation"
+          ],
+          "note": "While it captures the general concept of the rock-hewn cross church in Lalibela, the architectural details and human figures look artificial and inaccurate to an Ethiopian viewer.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s04-7e48715bd6ec.jpg",
+        "score": -7.0,
+        "verdict": {
+          "prompt_match": 6,
+          "same_person": null,
+          "people_look_ethiopian": 3,
+          "cultural_issues": [
+            "The church is shaped like a star instead of a Greek cross",
+            "The architecture and surrounding trench do not match the monolithic Church of Saint George in Lalibela",
+            "The structure features a cross on top, which is historically inaccurate for Bete Giyorgis"
+          ],
+          "artifacts": [],
+          "note": "While set in a rocky trench at golden hour with pilgrims, the church is incorrectly shaped as a star rather than a cross.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      }
+    ],
+    "judged": true
+  },
+  "s05": {
+    "file": "outputs/keyframes/s05-4112ea2f6493.jpg",
+    "prompt": "Ethiopian highland village elders with deep brown skin, wrapped in white handwoven cotton gabi shawls, bare heads, seated on low wooden stools in a circle under a huge warka (sycamore fig) tree, dappled afternoon light, calm conversation, cinematic film still, warm golden-hour light, soft 35mm film grain, rich earthy palette of ochre, deep green and coffee brown, gentle realistic style, shallow depth of field, subject centred for vertical and horizontal crops",
+    "candidates": [
+      {
+        "file": "outputs/keyframes/s05-4112ea2f6493.jpg",
+        "score": 9.0,
+        "verdict": {
+          "prompt_match": 10,
+          "same_person": null,
+          "people_look_ethiopian": 9,
+          "cultural_issues": [],
+          "artifacts": [],
+          "note": "A beautifully composed scene of Ethiopian elders gathered under a warka tree wearing traditional gabi shawls.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s05-008652990075.jpg",
+        "score": 2.0,
+        "verdict": {
+          "prompt_match": 8,
+          "same_person": null,
+          "people_look_ethiopian": 7,
+          "cultural_issues": [
+            "some facial features lean slightly ambiguous or AI-smooth"
+          ],
+          "artifacts": [
+            "slightly distorted feet and hands on close inspection"
+          ],
+          "note": "A decent representation of elders under a warka tree, but facial features and skin textures reveal AI generation.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      }
+    ],
+    "judged": true
+  },
+  "s06": {
+    "file": "outputs/keyframes/s06-625747419701.jpg",
+    "prompt": "close-up of glossy dark brown roasted coffee beans in a flat round iron pan over glowing charcoal, white smoke rising, fresh green grass scattered on the floor nearby, Ethiopian coffee ceremony, cinematic film still, warm golden-hour light, soft 35mm film grain, rich earthy palette of ochre, deep green and coffee brown, gentle realistic style, shallow depth of field, subject centred for vertical and horizontal crops",
+    "candidates": [
+      {
+        "file": "outputs/keyframes/s06-625747419701.jpg",
+        "score": 10.0,
+        "verdict": {
+          "prompt_match": 10,
+          "same_person": null,
+          "people_look_ethiopian": null,
+          "cultural_issues": [],
+          "artifacts": [],
+          "note": "The keyframe accurately portrays a traditional Ethiopian coffee roasting ceremony with beans, pan, glowing charcoal, smoke, and fresh grass.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s06-328e78cbaf65.jpg",
+        "score": 8.0,
+        "verdict": {
+          "prompt_match": 8,
+          "same_person": null,
+          "people_look_ethiopian": null,
+          "cultural_issues": [],
+          "artifacts": [],
+          "note": "A well-composed close-up shot capturing the traditional coffee roasting process over charcoal.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      }
+    ],
+    "judged": true
+  },
+  "s07": {
+    "file": "outputs/keyframes/s07-601f9268e9fa.jpg",
+    "prompt": "Ethiopian coffee ceremony: a round-bellied black clay coffee pot with a long narrow neck and a woven grass stopper, no handle on top, pouring coffee in a thin stream into small white handleless cups on a low wooden tray, hands of family members with deep brown skin reaching in, warm lamp light, cinematic film still, warm golden-hour light, soft 35mm film grain, rich earthy palette of ochre, deep green and coffee brown, gentle realistic style, shallow depth of field, subject centred for vertical and horizontal crops",
+    "candidates": [
+      {
+        "file": "outputs/keyframes/s07-601f9268e9fa.jpg",
+        "score": -1.0,
+        "verdict": {
+          "prompt_match": 8,
+          "same_person": null,
+          "people_look_ethiopian": 7,
+          "cultural_issues": [
+            "Coffee pot has a side handle like a Western teapot instead of traditional design",
+            "Pouring from the lid/stopper rather than the spout"
+          ],
+          "artifacts": [
+            "Distorted hands holding cups",
+            "Anomalous thin stream of coffee seemingly pulled like wire from the lid stopper"
+          ],
+          "note": "While the warm lighting and general setting evoke an Ethiopian coffee ceremony, the pot's side handle and strange pouring mechanics look unnatural.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s07-b86a67c14b14.jpg",
+        "score": -6.0,
+        "verdict": {
+          "prompt_match": 4,
+          "same_person": null,
+          "people_look_ethiopian": 6,
+          "cultural_issues": [
+            "cups have handles, which is incorrect for a traditional Ethiopian coffee ceremony (should be handleless 'cini')",
+            "the coffee pot being poured from has a woven stopper used as a lid, which is not standard for jebena preparation"
+          ],
+          "artifacts": [
+            "distorted fingers on the pouring hand",
+            "anatomical weirdness in the hands reaching for cups"
+          ],
+          "note": "While it captures the warm lighting and mood of a coffee ceremony, the cups having handles and hand distortions break authenticity.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      }
+    ],
+    "judged": true
+  },
+  "s08": {
+    "file": "outputs/keyframes/s08-f2a2a94077c8.jpg",
+    "prompt": "Addis Ababa skyline at dusk, modern towers and the light rail with lights coming on, warm sky, the hills beyond, cinematic film still, warm golden-hour light, soft 35mm film grain, rich earthy palette of ochre, deep green and coffee brown, gentle realistic style, shallow depth of field, subject centred for vertical and horizontal crops",
+    "candidates": [
+      {
+        "file": "outputs/keyframes/s08-f2a2a94077c8.jpg",
+        "score": 10.0,
+        "verdict": {
+          "prompt_match": 10,
+          "same_person": null,
+          "people_look_ethiopian": null,
+          "cultural_issues": [],
+          "artifacts": [],
+          "note": "This is a remarkably accurate depiction of Addis Ababa at dusk with the light rail and mountains.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s08-fa133810275e.jpg",
+        "score": 9.0,
+        "verdict": {
+          "prompt_match": 10,
+          "same_person": null,
+          "people_look_ethiopian": null,
+          "cultural_issues": [],
+          "artifacts": [
+            "garbled text on light rail (PELMABA, TEUTATA)"
+          ],
+          "note": "A recognizable view of Addis Ababa at dusk with the light rail and the iconic Kazanchis / African Union surrounding skyline clearly depicted.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      }
+    ],
+    "judged": true
+  },
+  "s09": {
+    "file": "outputs/keyframes/s09-b5afb201b3d5.jpg",
+    "prompt": "young Ethiopians working together in a bright Addis Ababa studio, one sketching a design, one at a laptop, traditional woven patterns on the wall, cinematic film still, warm golden-hour light, soft 35mm film grain, rich earthy palette of ochre, deep green and coffee brown, gentle realistic style, shallow depth of field, subject centred for vertical and horizontal crops",
+    "candidates": [
+      {
+        "file": "outputs/keyframes/s09-b5afb201b3d5.jpg",
+        "score": 3.0,
+        "verdict": {
+          "prompt_match": 8,
+          "same_person": null,
+          "people_look_ethiopian": 8,
+          "cultural_issues": [
+            "only one person is shown working instead of multiple young Ethiopians working together"
+          ],
+          "artifacts": [
+            "hand holding the pen is slightly distorted"
+          ],
+          "note": "Captures the warm Addis Ababa studio vibe and Habesha traditional patterns well, but only shows one person instead of multiple working together.",
+          "judge_model": "gemini-3.5-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s09-569c0f5e7667.jpg",
+        "score": 1.0,
+        "verdict": {
+          "prompt_match": 9,
+          "same_person": null,
+          "people_look_ethiopian": 8,
+          "cultural_issues": [
+            "The wall hangings look more like generic 'tribal' patterns than authentic Ethiopian woven textiles like Tibeb or traditional patterns from specific regions",
+            "The interior lighting and window structure feel more like a generic studio than a typical Addis Ababa workspace"
+          ],
+          "artifacts": [
+            "The person sketching has distorted fingers and hand anatomy",
+            "The laptop keyboard is blurry and lacks clear keys"
+          ],
+          "note": "The atmosphere captures the creative spirit well, but the cultural details of the textiles and the anatomical errors in the hands detract from the authenticity.",
+          "judge_model": "gemini-3.1-flash-lite"
+        }
+      }
+    ],
+    "judged": true
+  },
+  "s10": {
+    "file": "outputs/keyframes/s10-544e72d42ca3.jpg",
+    "prompt": "a young Ethiopian man seen from behind and side, standing at an apartment window in a snowy foreign city at night, holding a small white handleless coffee cup, a phone glowing in his hand, cinematic film still, warm golden-hour light, soft 35mm film grain, rich earthy palette of ochre, deep green and coffee brown, gentle realistic style, shallow depth of field, subject centred for vertical and horizontal crops",
+    "candidates": [
+      {
+        "file": "outputs/keyframes/s10-c6379d48a84a.jpg",
+        "score": -3.0,
+        "verdict": {
+          "prompt_match": 7,
+          "same_person": null,
+          "people_look_ethiopian": 6,
+          "cultural_issues": [
+            "The cup is a generic modern mug, not a traditional Ethiopian coffee cup (sini)",
+            "The man is holding a glowing cup instead of a phone as requested"
+          ],
+          "artifacts": [
+            "The cup is glowing unnaturally as if it contains a light source",
+            "The hand holding the cup has distorted fingers"
+          ],
+          "note": "The scene captures the mood of a lonely diaspora experience, but the glowing cup and lack of a phone are significant deviations from the prompt.",
+          "judge_model": "gemini-3.1-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s10-544e72d42ca3.jpg",
+        "score": -1.0,
+        "verdict": {
+          "prompt_match": 9,
+          "same_person": null,
+          "people_look_ethiopian": 6,
+          "cultural_issues": [
+            "The coffee cup is a generic Western-style takeaway cup, not a traditional Ethiopian coffee cup (sini)",
+            "The setting is entirely foreign and lacks any subtle Ethiopian cultural markers"
+          ],
+          "artifacts": [
+            "The hand holding the cup is anatomically distorted with extra fingers",
+            "The phone in the hand is merged with the cup and has an unnatural glowing light"
+          ],
+          "note": "While the composition matches the prompt, the AI-generated hand and the lack of any distinct Ethiopian cultural identity make it feel like a generic stock photo rather than a film about Ethiopian heritage.",
+          "judge_model": "gemini-3.1-flash-lite"
+        }
+      }
+    ],
+    "judged": true
+  },
+  "s11": {
+    "file": "outputs/keyframes/s11-30eaf0e746dc.jpg",
+    "prompt": "close-up of Abba, a Habesha Ethiopian father, smiling with gentle pride, a thin wisp of coffee smoke drifting in front of him, warm window light, the man is a fictional Habesha Ethiopian man from Addis Ababa in his fifties, deep brown skin, East African features, short tightly curled grey-flecked hair and a short grey-flecked beard, kind tired eyes, a white handwoven cotton gabi shawl draped over a simple collared shirt, cinematic film still, warm golden-hour light, soft 35mm film grain, rich earthy palette of ochre, deep green and coffee brown, gentle realistic style, shallow depth of field, subject centred for vertical and horizontal crops",
+    "candidates": [
+      {
+        "file": "outputs/keyframes/s11-cf1ed98e31c4.jpg",
+        "score": 15.0,
+        "verdict": {
+          "prompt_match": 9,
+          "same_person": 8,
+          "people_look_ethiopian": 9,
+          "cultural_issues": [],
+          "artifacts": [
+            "distorted smoke shape"
+          ],
+          "note": "The keyframe captures the essence of the character well, though the smoke rendering is slightly unnatural.",
+          "judge_model": "gemini-3.1-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s11-5df0ca4f43ec.jpg",
+        "score": 15.0,
+        "verdict": {
+          "prompt_match": 9,
+          "same_person": 8,
+          "people_look_ethiopian": 9,
+          "cultural_issues": [],
+          "artifacts": [
+            "smoke appears to be coming from nowhere or a non-existent source"
+          ],
+          "note": "The portrayal is authentic and captures the essence of a Habesha father well, though the smoke effect is slightly unnatural.",
+          "judge_model": "gemini-3.1-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s11-30eaf0e746dc.jpg",
+        "score": 16.0,
+        "verdict": {
+          "prompt_match": 9,
+          "same_person": 8,
+          "people_look_ethiopian": 9,
+          "cultural_issues": [],
+          "artifacts": [],
+          "note": "The keyframe captures the essence of the character and the requested atmosphere well, though the smoke effect is slightly stylized.",
+          "judge_model": "gemini-3.1-flash-lite"
+        }
+      },
+      {
+        "file": "outputs/keyframes/s11-6e69f5943597.jpg",
+        "score": 8.0,
+        "verdict": {
+          "prompt_match": 9,
+          "same_person": 7,
+          "people_look_ethiopian": 8,
+          "cultural_issues": [
+            "The hair texture is slightly more characteristic of Afro-textured curls than the typical straight or wavy hair often associated with the Habesha phenotype",
+            "The smile is a bit too wide and artificial, lacking the subtle, dignified 'gentle pride' typical of an elder in this context"
+          ],
+          "artifacts": [
+            "The smoke trail appears unnaturally thin and disconnected from a source",
+            "The teeth structure is slightly distorted"
+          ],
+          "note": "While the atmosphere captures the warmth, the character's features and the unnatural smoke trail feel more like an AI-generated approximation than an authentic Ethiopian cinematic moment.",
+          "judge_model": "gemini-3.1-flash-lite"
+        }
+      }
+    ],
+    "judged": true
+  }
+}

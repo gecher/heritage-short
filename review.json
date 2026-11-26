@@ -1,0 +1,44 @@
+{
+  "_about": "Human review of the keyframes: what the automatic judge accepted and what an Ethiopian viewer rejected. Notes in quotes are the director's own words during review on 26 Nov 2026.",
+  "s02": {
+    "round1": "outputs/keyframes/s02-667b3e42ea51.jpg",
+    "judge_said": "same person 8/10, no cultural issues",
+    "human_said": "\"The person is an Indian person, not Ethiopian.\"",
+    "change": "Rewrote the character: Habesha Ethiopian man from Addis Ababa, deep brown skin, East African features, most important words first. Added a strict 'do the people look Habesha?' score to the judge (v2) and 4 candidates for the father.",
+    "resolved": true
+  },
+  "s04": {
+    "round1": "outputs/keyframes/s04-d0a9d9883f44.jpg",
+    "judge_said": "10/10, no cultural issues",
+    "human_said": "A European-style church dropped into a canyon, not a church carved down into the rock like Lalibela.",
+    "change": "Named the landmark: Bete Giyorgis in Lalibela, cross-shaped, carved down into red rock, flat roof with carved crosses.",
+    "resolved": true
+  },
+  "s05": {
+    "round1": "outputs/keyframes/s05-81b199f96991.jpg",
+    "judge_said": "6/10 for small hand artifacts only",
+    "human_said": "The elders wear Middle-Eastern head cloths; Ethiopian elders wear the white gabi, bare-headed.",
+    "change": "Described deep brown skin, white handwoven gabi shawls, bare heads, low wooden stools.",
+    "resolved": true
+  },
+  "s03": {
+    "judge_said": "9/10, no issues",
+    "human_said": "\"The cloth of the father must be Ethiopian when he walks with the child\"; \"the child must be a boy, and similar before and after growth.\"",
+    "change": "Wrote a new prompt (side view, white gabi with tibeb border, jodhpur-style trousers; the boy as the young Abba). Not rendered: the free image quota ran out (FAILURES F15).",
+    "resolved": false
+  },
+  "s07": {
+    "round1": "outputs/keyframes/s07-ba759907f5d6.jpg",
+    "judge_said": "flagged a handled pot and handled cups",
+    "human_said": "\"The coffee must be traditional Ethiopian coffee.\"",
+    "change": "Described the jebena by shape, the handleless sini cups, the rekebot and the mesob. Better, but the pot still looks like a teapot; a further prompt is written for the next run (FAILURES F15).",
+    "resolved": false
+  },
+  "s06": {
+    "judge_said": "accepted green, unroasted beans",
+    "human_said": "\"The coffee must be traditional Ethiopian coffee.\"",
+    "change": "Glossy dark brown roasted beans over charcoal, grass on the floor: fixed in round 2.",
+    "resolved": true,
+    "round1": "outputs/keyframes/s06-143a2d000f09.jpg"
+  }
+}

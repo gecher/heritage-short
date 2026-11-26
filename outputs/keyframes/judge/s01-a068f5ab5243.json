@@ -1,0 +1,9 @@
+{
+  "prompt_match": 8,
+  "same_person": null,
+  "people_look_ethiopian": null,
+  "cultural_issues": [],
+  "artifacts": [],
+  "note": "The shot captures the majestic Ethiopian highlands at dawn with layered green mountains and traditional thatched tukuls.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

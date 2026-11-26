@@ -1,0 +1,15 @@
+{
+  "prompt_match": 4,
+  "same_person": null,
+  "people_look_ethiopian": 6,
+  "cultural_issues": [
+    "cups have handles, which is incorrect for a traditional Ethiopian coffee ceremony (should be handleless 'cini')",
+    "the coffee pot being poured from has a woven stopper used as a lid, which is not standard for jebena preparation"
+  ],
+  "artifacts": [
+    "distorted fingers on the pouring hand",
+    "anatomical weirdness in the hands reaching for cups"
+  ],
+  "note": "While it captures the warm lighting and mood of a coffee ceremony, the cups having handles and hand distortions break authenticity.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

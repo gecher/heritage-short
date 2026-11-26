@@ -1,0 +1,14 @@
+{
+  "prompt_match": 8,
+  "same_person": null,
+  "cultural_issues": [
+    "coffee beans are roasting in a pan, but frankincense is not visible",
+    "the roasting process is depicted as a mix of green and brown beans simultaneously, which is not how traditional Ethiopian coffee roasting is performed"
+  ],
+  "artifacts": [
+    "the beans appear to be floating or unnaturally clumped in the smoke",
+    "the pan handle design is slightly distorted"
+  ],
+  "note": "The image captures the essence of coffee roasting, but the visual representation of the beans and the absence of frankincense are not culturally accurate.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

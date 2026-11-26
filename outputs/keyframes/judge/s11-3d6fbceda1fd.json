@@ -1,0 +1,11 @@
+{
+  "prompt_match": 9,
+  "same_person": 8,
+  "people_look_ethiopian": 9,
+  "cultural_issues": [],
+  "artifacts": [
+    "smoke appears to be coming from nowhere or a non-existent source"
+  ],
+  "note": "The portrayal is authentic and captures the essence of a Habesha father well, though the smoke effect is slightly unnatural.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

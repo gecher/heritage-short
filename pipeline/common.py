@@ -91,11 +91,13 @@ def load_storyboard(path: Path = STORYBOARD) -> dict[str, Any]:
 
 # --- providers ---------------------------------------------------------------------------------
 
-def gemini_client():
-    """Gemini on the v1beta API: the TTS speechConfig field does not exist in v1 (see FAILURES.md)."""
+def gemini_client(timeout_s: int | None = None):
+    """Gemini on the v1beta API: the TTS speechConfig field does not exist in v1 (see FAILURES.md).
+    timeout_s: give up on a call that hangs (an overloaded server can stall without answering)."""
     from google import genai
     from google.genai import types
-    return genai.Client(api_key=env("GEMINI_API_KEY"), http_options=types.HttpOptions(api_version="v1beta"))
+    options = types.HttpOptions(api_version="v1beta", timeout=timeout_s * 1000 if timeout_s else None)
+    return genai.Client(api_key=env("GEMINI_API_KEY"), http_options=options)
 
 
 def text_models() -> list[str]:
@@ -152,7 +154,7 @@ def call_model(stage: str, shot: str, provider: str, model: str, params: dict[st
             log_call(stage=stage, shot=shot, provider=provider, model=model, params=params,
                      seed=params.get("seed"), latency_s=latency, attempt=attempt, status="error",
                      error=f"{type(exc).__name__}: {str(exc)[:300]}")
-            daily = "PerDay" in str(exc) or "per day" in str(exc)
+            daily = any(t in str(exc) for t in ("PerDay", "per day", "daily free allocation"))
             if attempt == attempts or daily:  # a daily quota will not recover by waiting
                 raise
             limited = any(t in str(exc) for t in ("429", "RESOURCE_EXHAUSTED"))

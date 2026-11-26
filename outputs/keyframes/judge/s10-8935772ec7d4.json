@@ -1,0 +1,14 @@
+{
+  "prompt_match": 7,
+  "same_person": null,
+  "cultural_issues": [
+    "The coffee cup is a standard modern mug, not a traditional Ethiopian 'sini' (small handleless cup used for coffee ceremony)",
+    "The setting is a generic Western city, which does not specifically evoke Ethiopian heritage"
+  ],
+  "artifacts": [
+    "The man is missing a phone in his hand; he is only holding a cup",
+    "The hand holding the cup appears slightly distorted"
+  ],
+  "note": "The image captures the mood well but misses the specific cultural detail of the traditional coffee cup and the requested phone.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

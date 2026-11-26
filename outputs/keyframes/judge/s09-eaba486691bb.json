@@ -1,0 +1,15 @@
+{
+  "prompt_match": 9,
+  "same_person": null,
+  "cultural_issues": [
+    "The wall hangings are generic 'tribal' patterns rather than authentic Ethiopian woven textiles like Tibeb or Shemma",
+    "The interior design feels more like a generic 'boho' aesthetic than a typical Addis Ababa studio"
+  ],
+  "artifacts": [
+    "The person sketching has distorted fingers and hand structure",
+    "The laptop keyboard is garbled and lacks clear keys",
+    "The person at the laptop has an unnatural, blurred head shape"
+  ],
+  "note": "The image captures the requested atmosphere well, but the cultural details and AI-generated anatomy are inaccurate.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

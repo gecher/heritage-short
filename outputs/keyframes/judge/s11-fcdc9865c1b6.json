@@ -1,0 +1,15 @@
+{
+  "prompt_match": 9,
+  "same_person": 7,
+  "people_look_ethiopian": 8,
+  "cultural_issues": [
+    "The hair texture is slightly more characteristic of Afro-textured curls than the typical straight or wavy hair often associated with the Habesha phenotype",
+    "The smile is a bit too wide and artificial, lacking the subtle, dignified 'gentle pride' typical of an elder in this context"
+  ],
+  "artifacts": [
+    "The smoke trail appears unnaturally thin and disconnected from a source",
+    "The teeth structure is slightly distorted"
+  ],
+  "note": "While the atmosphere captures the warmth, the character's features and the unnatural smoke trail feel more like an AI-generated approximation than an authentic Ethiopian cinematic moment.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

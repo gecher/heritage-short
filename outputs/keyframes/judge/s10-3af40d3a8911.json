@@ -1,0 +1,15 @@
+{
+  "prompt_match": 9,
+  "same_person": null,
+  "people_look_ethiopian": 6,
+  "cultural_issues": [
+    "The coffee cup is a generic Western-style takeaway cup, not a traditional Ethiopian coffee cup (sini)",
+    "The setting is entirely foreign and lacks any subtle Ethiopian cultural markers"
+  ],
+  "artifacts": [
+    "The hand holding the cup is anatomically distorted with extra fingers",
+    "The phone in the hand is merged with the cup and has an unnatural glowing light"
+  ],
+  "note": "While the composition matches the prompt, the AI-generated hand and the lack of any distinct Ethiopian cultural identity make it feel like a generic stock photo rather than a film about Ethiopian heritage.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

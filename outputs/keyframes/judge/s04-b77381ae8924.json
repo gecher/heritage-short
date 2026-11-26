@@ -1,0 +1,15 @@
+{
+  "prompt_match": 8,
+  "same_person": null,
+  "people_look_ethiopian": 3,
+  "cultural_issues": [
+    "crosses on the roof are stylistically inaccurate to Bete Giyorgis",
+    "architecture of the trench and surrounding complex looks generated and incorrect",
+    "people dressed in white shawls lack authentic Habesha facial features"
+  ],
+  "artifacts": [
+    "blurred figures with lack of distinct facial features due to high angle AI generation"
+  ],
+  "note": "While it captures the general concept of the rock-hewn cross church in Lalibela, the architectural details and human figures look artificial and inaccurate to an Ethiopian viewer.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

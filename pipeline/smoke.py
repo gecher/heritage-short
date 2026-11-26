@@ -72,11 +72,12 @@ def cloudflare_image() -> str:
     account, token = env("CLOUDFLARE_ACCOUNT_ID"), env("CLOUDFLARE_API_TOKEN")
     model = env("CF_IMAGE_MODEL", "@cf/black-forest-labs/flux-1-schnell")
     url = f"https://api.cloudflare.com/client/v4/accounts/{account}/ai/run/{model}"
-    params = {"prompt": "a clay coffee pot (jebena) on a woven tray, warm morning light", "steps": 4, "seed": 7}
+    params = {"prompt": "a clay coffee pot (jebena) on a woven tray, warm morning light", "steps": 4}  # flux-1-schnell rejects "seed" (Cloudflare error 5006)
 
     def go() -> bytes:
         r = requests.post(url, headers={"Authorization": f"Bearer {token}"}, json=params, timeout=120)
-        r.raise_for_status()
+        if not r.ok:  # show Cloudflare's own error message, not just the status code
+            raise RuntimeError(f"{r.status_code}: {r.text[:400]}")
         return base64.b64decode(r.json()["result"]["image"])
     img = call_model("smoke", "-", "cloudflare", model, params, go)
     path = OUT / "keyframes" / "smoke.jpg"

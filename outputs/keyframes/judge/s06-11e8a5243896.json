@@ -1,0 +1,9 @@
+{
+  "prompt_match": 10,
+  "same_person": null,
+  "people_look_ethiopian": null,
+  "cultural_issues": [],
+  "artifacts": [],
+  "note": "The keyframe accurately portrays a traditional Ethiopian coffee roasting ceremony with beans, pan, glowing charcoal, smoke, and fresh grass.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

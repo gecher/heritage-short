@@ -1,0 +1,13 @@
+{
+  "prompt_match": 6,
+  "same_person": null,
+  "people_look_ethiopian": 3,
+  "cultural_issues": [
+    "The church is shaped like a star instead of a Greek cross",
+    "The architecture and surrounding trench do not match the monolithic Church of Saint George in Lalibela",
+    "The structure features a cross on top, which is historically inaccurate for Bete Giyorgis"
+  ],
+  "artifacts": [],
+  "note": "While set in a rocky trench at golden hour with pilgrims, the church is incorrectly shaped as a star rather than a cross.",
+  "judge_model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,16 @@
+{
+  "prompt_match": 7,
+  "same_person": null,
+  "cultural_issues": [
+    "The jebena has a handle on the side, which is not traditional for an Ethiopian jebena",
+    "The cups have handles, whereas traditional Ethiopian coffee cups (cini) are handleless",
+    "The grass on the floor is not a traditional setting for a coffee ceremony, which usually takes place on a mat or rug"
+  ],
+  "artifacts": [
+    "The hand reaching for the lid has distorted fingers",
+    "The hand on the left has an unnatural shape and finger count",
+    "The coffee pot's spout and handle structure are anatomically incorrect for a jebena"
+  ],
+  "note": "While the scene captures the warm atmosphere of a coffee ceremony, the design of the jebena and cups is inaccurate to Ethiopian tradition.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

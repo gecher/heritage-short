@@ -1,0 +1,15 @@
+{
+  "prompt_match": 7,
+  "same_person": null,
+  "people_look_ethiopian": 6,
+  "cultural_issues": [
+    "The cup is a generic modern mug, not a traditional Ethiopian coffee cup (sini)",
+    "The man is holding a glowing cup instead of a phone as requested"
+  ],
+  "artifacts": [
+    "The cup is glowing unnaturally as if it contains a light source",
+    "The hand holding the cup has distorted fingers"
+  ],
+  "note": "The scene captures the mood of a lonely diaspora experience, but the glowing cup and lack of a phone are significant deviations from the prompt.",
+  "judge_model": "gemini-3.1-flash-lite"
+}

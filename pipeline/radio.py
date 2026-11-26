@@ -28,6 +28,16 @@ def srt_time(t: float) -> str:
     return f"{h:02}:{m:02}:{s:02},{ms:03}"
 
 
+def shot_lengths(board: dict[str, Any], manifest: dict[str, Any]) -> dict[str, float]:
+    """Each shot's real length: its duration, or longer if its narration needs more room.
+    The voice track and the picture both use this, so they stay in sync."""
+    out = {}
+    for shot in board["shots"]:
+        spoken = manifest.get(shot["id"], {}).get("seconds", 0.0)
+        out[shot["id"]] = max(shot["duration"], LEAD_IN + spoken + TAIL) if spoken else shot["duration"]
+    return out
+
+
 def voice_track(board: dict[str, Any], manifest: dict[str, Any], out: Path) -> tuple[float, list[tuple[float, float, str]]]:
     """Concatenate the shots' narration with silence; return total seconds and subtitle cues."""
     frames, cues, t = bytearray(), [], 0.0
