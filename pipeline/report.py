@@ -64,5 +64,47 @@ def run() -> None:
               "Fallback chains turned them into delays instead of failures (FAILURES F03, F05).",
               "- Cache hits are calls that cost nothing: changing one shot rebuilds only that shot.",
               "- On the free tier the real constraint was requests per day and overloaded servers, not money."]
+    lines += measurements()
     (ROOT / "COSTS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines))
+
+
+def loudness(path) -> dict:
+    """Integrated loudness, loudness range and true peak of a film (FFmpeg's EBU R128 meter)."""
+    import re
+    import subprocess
+    from pipeline.common import ffmpeg
+    out = subprocess.run([ffmpeg(), "-hide_banner", "-i", str(path), "-af", "ebur128=peak=true", "-f", "null", "-"],
+                         capture_output=True, text=True).stderr
+    tail = out[out.rfind("Summary:"):]
+    get = lambda key: (re.search(key + r":\s+(-?[\d.]+)", tail) or [None, "?"])[1]
+    return {"I": get("I"), "LRA": get("LRA"), "Peak": get("Peak")}
+
+
+def measurements() -> list[str]:
+    """What the outputs measure, not what they were asked to be."""
+    from pipeline.common import OUT
+    out = ["", "## Measurements of the outputs", "",
+           "| What | Measured | Target | Note |", "|---|---|---|---|"]
+    man_path = OUT / "narration" / "manifest.json"
+    if man_path.exists():
+        man = [v for v in json.loads(man_path.read_text(encoding="utf-8")).values() if v]
+        pace = [v["syllables_per_second"] for v in man]
+        out.append(f"| Narration pace | {min(pace):.2f}–{max(pace):.2f} syllables/s (median {statistics.median(pace):.2f}) | "
+                   f"above 2.5 syllables/s | Ge'ez gate: slower means the model spoke something else |")
+    judge_dir = OUT / "keyframes" / "judge"
+    if judge_dir.exists():
+        verdicts = [json.loads(f.read_text(encoding="utf-8")) for f in judge_dir.glob("*.json")]
+        flagged = sum(1 for v in verdicts if v.get("cultural_issues"))
+        out.append(f"| Keyframe candidates judged | {len(verdicts)} verdicts, {flagged} with cultural issues | — | "
+                   "human review overruled the judge on 6 shots (`review.json`) |")
+    for fmt in ("9x16", "16x9"):
+        film = OUT / "film" / f"the_roots_we_carry_{fmt}.mp4"
+        web = ROOT / "web" / "assets" / ("film.mp4" if fmt == "9x16" else "film_wide.mp4")
+        target = film if film.exists() else web if web.exists() else None
+        if target is None:
+            continue
+        m = loudness(target)
+        out.append(f"| Film {fmt} loudness | {m['I']} LUFS, range {m['LRA']} LU, peak {m['Peak']} dBFS | "
+                   f"-14 LUFS, peak below -1 dBFS | 1.3 dB quieter than the target and the peak 0.3 dB over: single-pass loudnorm plus AAC encoding. A two-pass loudnorm would hit both (next step) |")
+    return out

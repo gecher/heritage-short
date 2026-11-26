@@ -45,7 +45,12 @@ Needs Python 3.11+, FFmpeg (set `FFMPEG_BIN` in `.env` if it is not on PATH), a 
 | `music` | the score: Lyria if available, otherwise composed in code |
 | `film` | everything in order, then the final MP4s: 9:16 and 16:9 (`film 16x9` for one) |
 | `site` | the website in `web/` |
-| `report` | COSTS.md |
+| `report` | COSTS.md: every call, and measurements of the outputs (pace, judge, loudness) |
+
+## Tests
+```bash
+python -m pytest -q      # 13 fast checks, no API calls: the contract, the cache, the Ge'ez gate, timing, transitions, formats
+```
 
 ## Website
 `web/` is a plain static page: `index.html` plus `data.js` and `assets/` written by `python -m pipeline site`. Open `web/index.html` directly, or serve it (`npx serve web`; Python's `http.server` cannot seek inside videos). Vercel serves it with the project's Root Directory set to `web`.
