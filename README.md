@@ -11,6 +11,7 @@ A father in Addis Ababa answers his son abroad, who asked what Ethiopia is, by s
 | 🌐 Website | https://the-roots-we-carry.vercel.app |
 | 🎥 Walkthrough (≤ 5 min) | https://the-roots-we-carry.vercel.app/films/the_roots_we_carry_walkthrough.mp4 |
 | 📣 Public post | https://x.com/getacher90th/status/2125995579901722791 |
+| 📄 Report (PDF) | [docs/The_Roots_We_Carry_Report.pdf](docs/The_Roots_We_Carry_Report.pdf) |
 
 ## What is special about it
 - **Amharic voice with a Ge'ez quality gate.** Each line is checked against its syllable count (each fidel ≈ one syllable). Takes that are too long, for example when the model read the English instruction aloud, are rejected and re-recorded automatically.
