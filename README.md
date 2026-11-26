@@ -1,5 +1,9 @@
 # The Roots We Carry · ሥርህን ይዘህ ትሄዳለህ
 
+[![tests](https://github.com/gecher/heritage-short/actions/workflows/tests.yml/badge.svg)](https://github.com/gecher/heritage-short/actions/workflows/tests.yml)
+![cost](https://img.shields.io/badge/cost-%240%20(free%20tiers)-brightgreen)
+![language](https://img.shields.io/badge/narration-Amharic%20(%E1%8A%A0%E1%88%9B%E1%88%AD%E1%8A%9B)-orange)
+
 A 90-second Amharic film about Ethiopian heritage, rebuilt from one file (`storyboard.json`) with one command.
 
 A father in Addis Ababa answers his son abroad, who asked what Ethiopia is, by showing him what his own father once showed him: the highlands, a church carved from rock, the elders under the warka tree, the coffee ceremony, and the new generation.
@@ -13,6 +17,8 @@ A father in Addis Ababa answers his son abroad, who asked what Ethiopia is, by s
 | 📣 Public post | https://x.com/getacher90th/status/2125995579901722791 |
 | 📄 Report (PDF) | [docs/The_Roots_We_Carry_Report.pdf](docs/The_Roots_We_Carry_Report.pdf) |
 
+![The 11 chosen keyframes](outputs/keyframes/contact_sheet.jpg)
+
 ## What is special about it
 - **Amharic voice with a Ge'ez quality gate.** Each line is checked against its syllable count (each fidel ≈ one syllable). Takes that are too long, for example when the model read the English instruction aloud, are rejected and re-recorded automatically.
 - **An AI judge, and an Ethiopian eye over it.** Every shot has several image candidates scored for prompt match, character consistency, Ethiopian appearance and cultural accuracy. Where the judge accepted something an Ethiopian viewer would reject, the human review overruled it (`review.json`).
@@ -21,6 +27,24 @@ A father in Addis Ababa answers his son abroad, who asked what Ethiopia is, by s
 - **Two films from one command:** 9:16 for phones and 16:9 for laptops and YouTube, both built from the same cached shots.
 - **A website** (`web/`, static, no keys): the film in either shape with Ge'ez chapter buttons, the story, how it was made, and the score played instrument by instrument. Built by `python -m pipeline site` and hosted on Vercel.
 - **Honest engineering.** Content-hash caching, fallback chains, a call log, 18 documented failures, 11 experiments.
+
+## How it works
+```mermaid
+flowchart LR
+    SB[storyboard.json<br/>11 shots, schema-checked] --> V[Voice<br/>Gemini TTS, Amharic<br/>Ge'ez syllable gate]
+    SB --> K[Keyframes<br/>FLUX candidates]
+    K --> J{AI judge<br/>Gemini vision}
+    J --> H[Human review<br/>review.json]
+    H --> M[Motion<br/>camera moves, dissolves]
+    SB --> S[Score<br/>tizita, composed in code]
+    V --> F[Film<br/>FFmpeg: subtitles, chapters,<br/>title, ducking, loudness]
+    M --> F
+    S --> F
+    F --> O1[9:16 MP4]
+    F --> O2[16:9 MP4]
+    F --> W[Website on Vercel]
+```
+Every box caches its output under a hash of all its inputs and logs every call to `runs.jsonl`, so a re-run with nothing changed makes no API calls, and changing one shot rebuilds only that shot. Details: [ARCHITECTURE.md](ARCHITECTURE.md).
 
 ## Quick start
 ```bash
@@ -50,11 +74,44 @@ Needs Python 3.11+, FFmpeg (set `FFMPEG_BIN` in `.env` if it is not on PATH), a 
 
 ## Tests
 ```bash
-python -m pytest -q      # 13 fast checks, no API calls: the contract, the cache, the Ge'ez gate, timing, transitions, formats
+python -m pytest -q      # 13 fast checks, also run by GitHub Actions on every push, no API calls: the contract, the cache, the Ge'ez gate, timing, transitions, formats
 ```
 
 ## Website
 `web/films/` holds the two full-quality 1080p films, copied there for submission and direct links. `web/` is a plain static page: `index.html` plus `data.js` and `assets/` written by `python -m pipeline site`. Open `web/index.html` directly, or serve it (`npx serve web`; Python's `http.server` cannot seek inside videos). Vercel serves it with the project's Root Directory set to `web`.
+
+## Repository layout
+```
+storyboard.json          the film, as data: 11 shots, voice, music, style
+schema/                  the contract the storyboard must satisfy
+pipeline/                one module per stage (python -m pipeline <command>)
+  common.py              validation, cache keys, retries, call log
+  narration.py           Amharic TTS + Ge'ez syllable gate
+  keyframes.py           FLUX candidates, Gemini judge, contact sheet
+  shots.py · film.py     camera moves, transitions, final assembly (9:16, 16:9)
+  score.py · music.py    the tizita score
+  site.py · report.py    the website data, COSTS.md
+tests/                   13 fast checks (no API calls), run on every push
+review.json              the human review that overruled the AI judge
+runs.jsonl               every model call: time, model, latency, status, error
+outputs/                 cached narration, keyframes, score (films are linked above)
+web/                     the static website deployed on Vercel
+docs/                    the PDF report
+```
+
+## My contributions and how AI was used
+I (Getacher Ashebir Yimer) directed and built this project; I used Claude as a coding assistant, and generative models for the media. To be clear about who did what:
+
+| Area | My part | AI's part |
+|---|---|---|
+| Story and audience | Chose the father's-letter story from three options; defined audience and intent ([DESIGN.md](DESIGN.md)) | Suggested story options |
+| Amharic | Wrote and reviewed every narration line as a native speaker; caught the mispronounced "ኢትዮጵያ" and chose the re-recorded take | Gemini TTS spoke the lines |
+| Cultural review | Rejected frames the AI judge accepted (a father who looked South Asian, a European-style church, Middle-Eastern head cloths, wrong coffee setup) and set the rewritten prompts' intent ([review.json](review.json)) | FLUX drew the images; Gemini judged them |
+| Pipeline code | Set the requirements (one storyboard, one command, caching, bilingual subtitles, two formats, transitions, website), ran every stage on my machine, reviewed results and asked for fixes | Claude drafted most of the code and documents under my direction |
+| Decisions | Chose free-only tools (no paid image quota), the reference portrait of Abba, the Vercel website design, posting on X | — |
+| Walkthrough and post | Recorded the walkthrough narration in my own voice; published the post | Assembled the walkthrough screens |
+
+Every failure and experiment I went through is recorded with evidence in [FAILURES.md](FAILURES.md) and [EXPERIMENTS.md](EXPERIMENTS.md).
 
 ## Documents
 - [DESIGN.md](DESIGN.md): audience, intent, story, user tests
