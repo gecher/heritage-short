@@ -6,8 +6,8 @@ A father in Addis Ababa answers his son abroad, who asked what Ethiopia is, by s
 
 | | Link |
 |---|---|
-| 🎬 Film, vertical 9:16 (phones) | FILM_916 |
-| 🎬 Film, horizontal 16:9 (laptops, YouTube) | FILM_169 |
+| 🎬 Film, vertical 9:16 (phones) | https://the-roots-we-carry.vercel.app/films/the_roots_we_carry_9x16.mp4 |
+| 🎬 Film, horizontal 16:9 (laptops, YouTube) | https://the-roots-we-carry.vercel.app/films/the_roots_we_carry_16x9.mp4 |
 | 🌐 Website | https://the-roots-we-carry.vercel.app |
 | 🎥 Walkthrough (≤ 5 min) | WALKTHROUGH |
 | 📣 Public post | POST |
@@ -53,7 +53,7 @@ python -m pytest -q      # 13 fast checks, no API calls: the contract, the cache
 ```
 
 ## Website
-`web/` is a plain static page: `index.html` plus `data.js` and `assets/` written by `python -m pipeline site`. Open `web/index.html` directly, or serve it (`npx serve web`; Python's `http.server` cannot seek inside videos). Vercel serves it with the project's Root Directory set to `web`.
+`web/films/` holds the two full-quality 1080p films, copied there for submission and direct links. `web/` is a plain static page: `index.html` plus `data.js` and `assets/` written by `python -m pipeline site`. Open `web/index.html` directly, or serve it (`npx serve web`; Python's `http.server` cannot seek inside videos). Vercel serves it with the project's Root Directory set to `web`.
 
 ## Documents
 - [DESIGN.md](DESIGN.md): audience, intent, story, user tests
